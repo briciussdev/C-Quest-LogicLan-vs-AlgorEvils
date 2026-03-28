@@ -2364,7 +2364,7 @@ function answer(idx) {
 
   updateHUD();
 
-  const delay = idx === q.ans ? 2000 : 2800;
+  const delay = idx === q.ans ? 4000 : 5000;
   setTimeout(() => {
     quizState.idx++;
     if (quizState.idx >= quizState.total || quizState.playerHP <= 0 || quizState.enemyHP <= 0) {
